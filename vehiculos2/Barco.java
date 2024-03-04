@@ -1,8 +1,8 @@
-package Vehiculos_Maritimos;
+package vehiculos2;
 
 public class Barco extends Acuatico{
     static boolean motor;
-    public void setMotor{
+    public void setMotor(){
         if(motor){
             System.out.println("Tiene motor");
         }
@@ -11,7 +11,12 @@ public class Barco extends Acuatico{
         }
     }
     public Barco(String matricula, String modelo, int slora, boolean motor){
-        super(matricula,modelo,slora,motor);
+        super(matricula,modelo,slora);
         this.motor = motor;
+    }
+
+    @Override
+    public void imprimir() {
+
     }
 }
